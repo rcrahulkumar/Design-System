@@ -1,0 +1,10 @@
+{
+  "bottomBar.height": "72px",
+
+  "bottomBar.padding": "12px 16px",
+
+  "bottomBar.bg": "{color.background.default}",
+  "bottomBar.border": "{color.border.default}",
+
+  "bottomBar.shadow": "0 -2px 8px rgba(0,0,0,0.05)"
+}

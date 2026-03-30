@@ -1,0 +1,18 @@
+{
+  "checkbox.default": {
+    "border": "{checkbox.border.default}",
+    "bg": "transparent"
+  },
+
+  "checkbox.selected": {
+    "border": "{checkbox.border.selected}",
+    "bg": "{checkbox.bg.selected}",
+    "check": "{checkbox.check.color}"
+  },
+
+  "checkbox.disabled": {
+    "border": "{checkbox.border.disabled}",
+    "bg": "{checkbox.bg.disabled}",
+    "text": "{checkbox.disabled.text}"
+  }
+}

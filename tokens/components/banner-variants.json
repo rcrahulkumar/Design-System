@@ -1,0 +1,24 @@
+{
+  "banner.imageLeft": {
+    "layout": "horizontal",
+    "imagePosition": "left"
+  },
+
+  "banner.imageRight": {
+    "layout": "horizontal",
+    "imagePosition": "right"
+  },
+
+  "banner.imageCenter": {
+    "layout": "vertical",
+    "imagePosition": "center"
+  },
+
+  "banner.withBG": {
+    "bg": "{color.primary.subtle}"
+  },
+
+  "banner.noBG": {
+    "bg": "transparent"
+  }
+}

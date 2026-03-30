@@ -1,0 +1,35 @@
+{
+  "list.text": {
+    "hasIcon": false,
+    "hasImage": false
+  },
+
+  "list.icon": {
+    "icon.size.lg": "40px",
+    "icon.size.sm": "24px"
+  },
+
+  "list.image": {
+    "image.size.lg": "48px",
+    "image.size.sm": "32px",
+    "image.radius": "{radius.sm}"
+  },
+
+  "list.status": {
+    "hasMeta": true,
+    "hasBadge": true
+  },
+
+  "list.radio": {
+    "control": "radio"
+  },
+
+  "list.checkbox": {
+    "control": "checkbox"
+  },
+
+  "list.action": {
+    "hasCTA": true,
+    "cta.type": "tertiary"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "bottomBar.primaryAction": "button.primary",
+  "bottomBar.secondaryAction": "button.secondary",
+
+  "bottomBar.fullWidth": true
+}

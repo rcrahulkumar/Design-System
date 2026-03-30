@@ -1,0 +1,14 @@
+{
+  "alert.layout": {
+    "gap": "{alert.gap}",
+    "align": "start"
+  },
+
+  "alert.withIcon": {
+    "iconSpacing": "{spacing.sm}"
+  },
+
+  "alert.withCTA": {
+    "ctaSpacing": "{spacing.md}"
+  }
+}

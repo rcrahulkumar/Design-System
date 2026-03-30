@@ -1,0 +1,31 @@
+{
+  "icon.health": [
+    "heart",
+    "pulse",
+    "activity",
+    "report",
+    "medicine"
+  ],
+
+  "icon.actions": [
+    "edit",
+    "delete",
+    "add",
+    "close",
+    "check"
+  ],
+
+  "icon.navigation": [
+    "home",
+    "search",
+    "profile",
+    "settings"
+  ],
+
+  "icon.status": [
+    "success",
+    "warning",
+    "error",
+    "info"
+  ]
+}

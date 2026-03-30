@@ -1,0 +1,19 @@
+{
+  "chip.default": {
+    "bg": "{chip.selection.default.bg}",
+    "text": "{chip.selection.default.text}",
+    "border": "{chip.selection.default.border}"
+  },
+
+  "chip.selected": {
+    "bg": "{chip.selection.selected.bg}",
+    "text": "{chip.selection.selected.text}",
+    "border": "{chip.selection.selected.border}"
+  },
+
+  "chip.disabled": {
+    "bg": "{chip.selection.disabled.bg}",
+    "text": "{chip.selection.disabled.text}",
+    "border": "{chip.selection.disabled.border}"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "alert.large": {
+    "padding": "{alert.padding.lg}",
+    "layout": "horizontal",
+    "fullWidth": true
+  },
+
+  "alert.small": {
+    "padding": "{alert.padding.sm}",
+    "layout": "compact",
+    "fullWidth": false
+  }
+}

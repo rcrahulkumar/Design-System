@@ -1,0 +1,11 @@
+{
+  "checkbox.size": "20px",
+
+  "checkbox.border.width": "2px",
+  "checkbox.radius": "{radius.sm}",
+
+  "checkbox.spacing": "{spacing.sm}",
+
+  "checkbox.label.font": "{font.size.14}",
+  "checkbox.description.font": "{font.size.12}"
+}

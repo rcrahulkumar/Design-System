@@ -1,0 +1,7 @@
+{
+  "bottomBar.price.font": "{font.size.16}",
+  "bottomBar.price.color": "{color.text.primary}",
+
+  "bottomBar.label.font": "{font.size.12}",
+  "bottomBar.label.color": "{color.text.secondary}"
+}

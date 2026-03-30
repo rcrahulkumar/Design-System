@@ -1,0 +1,15 @@
+{
+  "header.default": {
+    "hasBack": true,
+    "hasTitle": true
+  },
+
+  "header.withActions": {
+    "hasIcons": true,
+    "hasButtons": true
+  },
+
+  "header.withStatus": {
+    "hasSubtitle": true
+  }
+}

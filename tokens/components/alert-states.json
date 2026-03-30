@@ -1,0 +1,7 @@
+{
+  "alert.default": {
+    "bg": "{semantic.bg}",
+    "text": "{semantic.text}",
+    "border": "{semantic.border}"
+  }
+}

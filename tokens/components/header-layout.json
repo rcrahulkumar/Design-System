@@ -1,0 +1,14 @@
+{
+  "header.layout": {
+    "align": "center",
+    "justify": "space-between"
+  },
+
+  "header.left": {
+    "gap": "{spacing.sm}"
+  },
+
+  "header.right": {
+    "gap": "{spacing.sm}"
+  }
+}

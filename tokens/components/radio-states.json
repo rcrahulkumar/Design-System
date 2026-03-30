@@ -1,0 +1,17 @@
+{
+  "radio.default": {
+    "border": "{radio.border.default}",
+    "fill": "transparent"
+  },
+
+  "radio.selected": {
+    "border": "{radio.border.selected}",
+    "fill": "{radio.fill.selected}"
+  },
+
+  "radio.disabled": {
+    "border": "{radio.border.disabled}",
+    "fill": "{radio.fill.disabled}",
+    "text": "{radio.disabled.text}"
+  }
+}

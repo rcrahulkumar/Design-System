@@ -1,0 +1,9 @@
+{
+  "card.layout.vertical": {
+    "gap": "{spacing.md}"
+  },
+
+  "card.layout.horizontal": {
+    "gap": "{spacing.sm}"
+  }
+}

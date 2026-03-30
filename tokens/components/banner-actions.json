@@ -1,0 +1,8 @@
+{
+  "banner.cta.primary": "button.primary",
+  "banner.cta.secondary": "button.secondary",
+
+  "banner.withAlert": {
+    "alertSpacing": "{spacing.sm}"
+  }
+}

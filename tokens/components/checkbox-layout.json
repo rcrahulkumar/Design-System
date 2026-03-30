@@ -1,0 +1,16 @@
+{
+  "checkbox.layout.horizontal": {
+    "gap": "{spacing.md}",
+    "align": "center"
+  },
+
+  "checkbox.layout.vertical": {
+    "gap": "{spacing.sm}",
+    "align": "start"
+  },
+
+  "checkbox.withDescription": {
+    "labelSpacing": "4px",
+    "descriptionSpacing": "2px"
+  }
+}

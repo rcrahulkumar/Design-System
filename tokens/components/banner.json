@@ -1,0 +1,13 @@
+{
+  "banner.radius": "{radius.lg}",
+
+  "banner.padding.lg": "24px",
+  "banner.padding.md": "16px",
+
+  "banner.gap": "{spacing.md}",
+
+  "banner.title.font": "{font.size.20}",
+  "banner.description.font": "{font.size.14}",
+
+  "banner.image.radius": "{radius.md}"
+}

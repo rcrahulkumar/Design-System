@@ -1,0 +1,12 @@
+{
+  "bottomBar.row": {
+    "direction": "column",
+    "gap": "{spacing.sm}"
+  },
+
+  "bottomBar.column": {
+    "direction": "row",
+    "justify": "space-between",
+    "gap": "{spacing.sm}"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "badge.icon.size": "24px",
+  "badge.icon.radius": "50%",
+
+  "badge.icon.success.bg": "{color.green.500}",
+  "badge.icon.warning.bg": "{color.yellow.500}",
+  "badge.icon.error.bg": "{color.red.500}",
+  "badge.icon.inactive.bg": "{color.gray.300}",
+
+  "badge.icon.color": "{color.white}"
+}

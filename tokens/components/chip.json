@@ -1,0 +1,9 @@
+{
+  "chip.radius": "999px",
+
+  "chip.padding.md": "8px 12px",
+  "chip.padding.sm": "6px 10px",
+
+  "chip.font.md": "{font.size.14}",
+  "chip.font.sm": "{font.size.12}"
+}

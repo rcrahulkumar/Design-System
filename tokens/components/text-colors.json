@@ -1,0 +1,9 @@
+{
+  "text.primary": "{color.text.primary}",
+  "text.secondary": "{color.text.secondary}",
+  "text.muted": "{color.text.muted}",
+
+  "text.success": "{color.success}",
+  "text.error": "{color.error}",
+  "text.warning": "{color.warning}"
+}

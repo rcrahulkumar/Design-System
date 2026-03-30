@@ -1,0 +1,10 @@
+{
+  "header.height": "56px",
+
+  "header.padding": "0 16px",
+
+  "header.bg": "{color.background.default}",
+  "header.border": "{color.border.default}",
+
+  "header.shadow": "{shadow.sm}"
+}

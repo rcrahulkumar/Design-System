@@ -1,0 +1,9 @@
+{
+  "badge.radius": "999px",
+
+  "badge.padding.md": "6px 10px",
+  "badge.padding.sm": "4px 8px",
+
+  "badge.font.md": "12px",
+  "badge.font.sm": "10px"
+}

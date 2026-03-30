@@ -1,0 +1,24 @@
+{
+  "button.primary.bg": "{color.primary}",
+  "button.primary.bg.pressed": "{color.primary.pressed}",
+  "button.primary.text": "{color.white}",
+  "button.primary.disabled": "{color.gray.200}",
+
+  "button.secondary.bg": "{color.secondary.subtle}",
+  "button.secondary.text": "{color.secondary}",
+  "button.secondary.border": "{color.secondary}",
+  "button.secondary.pressed": "{color.blue.600}",
+
+  "button.tertiary.text": "{color.primary}",
+  "button.tertiary.disabled": "{color.gray.300}",
+
+  "button.radius": "{radius.md}",
+
+  "button.padding.lg": "16px 24px",
+  "button.padding.md": "12px 20px",
+  "button.padding.sm": "8px 16px",
+
+  "button.font.lg": "{font.size.16}",
+  "button.font.md": "{font.size.14}",
+  "button.font.sm": "{font.size.12}"
+}

@@ -1,0 +1,10 @@
+{
+  "banner.layout": {
+    "gap": "{spacing.md}",
+    "align": "center"
+  },
+
+  "banner.content": {
+    "maxWidth": "70%"
+  }
+}

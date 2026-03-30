@@ -1,0 +1,13 @@
+{
+  "card.primary": {
+    "shadow": "{shadow.md}"
+  },
+
+  "card.secondary": {
+    "border": "{color.border.default}"
+  },
+
+  "card.elevated": {
+    "shadow": "{shadow.lg}"
+  }
+}

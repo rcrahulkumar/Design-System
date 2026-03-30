@@ -1,0 +1,17 @@
+{
+  "alert.info.bg": "{color.blue.100}",
+  "alert.info.text": "{color.blue.800}",
+  "alert.info.border": "{color.blue.200}",
+
+  "alert.success.bg": "{color.green.100}",
+  "alert.success.text": "{color.green.500}",
+  "alert.success.border": "{color.green.200}",
+
+  "alert.warning.bg": "{color.yellow.100}",
+  "alert.warning.text": "{color.yellow.500}",
+  "alert.warning.border": "{color.yellow.200}",
+
+  "alert.error.bg": "{color.red.100}",
+  "alert.error.text": "{color.red.500}",
+  "alert.error.border": "{color.red.200}"
+}

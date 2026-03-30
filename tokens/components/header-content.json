@@ -1,0 +1,11 @@
+{
+  "header.title.font": "{font.size.16}",
+  "header.title.color": "{color.text.primary}",
+
+  "header.subtitle.font": "{font.size.12}",
+  "header.subtitle.color": "{color.text.secondary}",
+
+  "header.icon.size": "{icon.size.md}",
+
+  "header.button.font": "{font.size.14}"
+}

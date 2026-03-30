@@ -1,0 +1,9 @@
+{
+  "header.default": {
+    "bg": "{header.bg}"
+  },
+
+  "header.scrolled": {
+    "shadow": "{shadow.md}"
+  }
+}

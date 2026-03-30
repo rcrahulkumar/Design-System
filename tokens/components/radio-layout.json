@@ -1,0 +1,16 @@
+{
+  "radio.layout.horizontal": {
+    "gap": "{spacing.md}",
+    "align": "center"
+  },
+
+  "radio.layout.vertical": {
+    "gap": "{spacing.sm}",
+    "align": "start"
+  },
+
+  "radio.withDescription": {
+    "labelSpacing": "4px",
+    "descriptionSpacing": "2px"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "radio.size": "20px",
+  "radio.inner.size": "10px",
+
+  "radio.border.width": "2px",
+
+  "radio.spacing": "{spacing.sm}",
+
+  "radio.label.font": "{font.size.14}",
+  "radio.description.font": "{font.size.12}"
+}

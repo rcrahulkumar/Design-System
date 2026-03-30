@@ -1,0 +1,19 @@
+{
+  "chart-colors": {
+    "heart-rate": "var(--color-red-500)",
+    "sleep": "var(--color-blue-500)",
+    "steps": "var(--color-orange-500)",
+    "weight": "var(--color-green-500)",
+    "calories": "var(--color-yellow-500)"
+  },
+  "chart-grid": {
+    "stroke": "var(--color-gray-100)",
+    "stroke-dasharray": "3 3"
+  },
+  "chart-tooltip": {
+    "bg": "#FFFFFF",
+    "border": "var(--color-gray-200)",
+    "radius": "var(--radius-md)",
+    "shadow": "0 4px 12px rgba(0,0,0,0.08)"
+  }
+}

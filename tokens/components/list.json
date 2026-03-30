@@ -1,0 +1,11 @@
+{
+  "list.gap": "{spacing.md}",
+  "list.padding": "{spacing.md}",
+
+  "list.item.padding.lg": "16px",
+  "list.item.padding.sm": "12px",
+
+  "list.radius": "{radius.md}",
+
+  "list.divider": "{color.border.default}"
+}

@@ -1,0 +1,17 @@
+{
+  "badge.success.bg": "{color.green.100}",
+  "badge.success.text": "{color.green.500}",
+  "badge.success.border": "{color.green.200}",
+
+  "badge.warning.bg": "{color.yellow.100}",
+  "badge.warning.text": "{color.yellow.500}",
+  "badge.warning.border": "{color.yellow.200}",
+
+  "badge.error.bg": "{color.red.100}",
+  "badge.error.text": "{color.red.500}",
+  "badge.error.border": "{color.red.200}",
+
+  "badge.inactive.bg": "{color.gray.100}",
+  "badge.inactive.text": "{color.text.secondary}",
+  "badge.inactive.border": "{color.gray.200}"
+}

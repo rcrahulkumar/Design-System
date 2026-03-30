@@ -1,0 +1,11 @@
+{
+  "text.heading.lg": "{font.size.24}",
+  "text.heading.md": "{font.size.20}",
+  "text.heading.sm": "{font.size.16}",
+
+  "text.body.lg": "{font.size.16}",
+  "text.body.md": "{font.size.14}",
+  "text.body.sm": "{font.size.12}",
+
+  "text.caption": "{font.size.10}"
+}

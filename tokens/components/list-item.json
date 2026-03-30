@@ -1,0 +1,9 @@
+{
+  "list.item.bg": "{color.background.default}",
+  "list.item.hover": "{color.background.subtle}",
+
+  "list.item.title": "{color.text.primary}",
+  "list.item.description": "{color.text.secondary}",
+
+  "list.item.meta": "{color.text.muted}"
+}

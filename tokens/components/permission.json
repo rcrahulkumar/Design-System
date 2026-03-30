@@ -1,0 +1,12 @@
+{
+  "permission.card.radius": "{radius.lg}",
+  "permission.card.padding": "{spacing.lg}",
+
+  "permission.icon.size": "64px",
+
+  "permission.title.font": "{font.size.16}",
+  "permission.description.font": "{font.size.14}",
+
+  "permission.cta.primary": "button.primary",
+  "permission.cta.secondary": "button.tertiary"
+}

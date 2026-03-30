@@ -1,0 +1,13 @@
+{
+  "radio.border.default": "{color.border.default}",
+  "radio.border.selected": "{color.primary}",
+  "radio.border.disabled": "{color.gray.200}",
+
+  "radio.fill.selected": "{color.primary}",
+  "radio.fill.disabled": "{color.gray.300}",
+
+  "radio.label": "{color.text.primary}",
+  "radio.description": "{color.text.secondary}",
+
+  "radio.disabled.text": "{color.text.muted}"
+}

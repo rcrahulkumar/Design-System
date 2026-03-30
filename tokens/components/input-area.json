@@ -1,0 +1,11 @@
+{
+  "textarea.background": "{color.white}",
+  "textarea.border": "{input.border.default}",
+  "textarea.focus": "{input.border.focus}",
+  "textarea.error": "{input.border.error}",
+
+  "textarea.padding": "{spacing.md}",
+  "textarea.radius": "{radius.md}",
+
+  "textarea.minHeight": "120px"
+}

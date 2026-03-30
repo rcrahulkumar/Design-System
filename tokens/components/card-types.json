@@ -1,0 +1,31 @@
+{
+  "card.action": {
+    "hasIcon": true,
+    "hasCTA": true
+  },
+
+  "card.doctor": {
+    "hasAvatar": true,
+    "hasRating": true,
+    "hasCTA": true
+  },
+
+  "card.healthMetric": {
+    "hasScore": true,
+    "hasStatus": true
+  },
+
+  "card.status": {
+    "hasProgress": true,
+    "hasDescription": true
+  },
+
+  "card.testimonial": {
+    "hasUser": true,
+    "hasRating": true
+  },
+
+  "card.complex": {
+    "canEmbed": true
+  }
+}

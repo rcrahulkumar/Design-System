@@ -1,0 +1,12 @@
+{
+  "icon.default": "{color.text.primary}",
+  "icon.muted": "{color.text.muted}",
+  "icon.inverse": "{color.white}",
+
+  "icon.primary": "{color.primary}",
+  "icon.secondary": "{color.secondary}",
+
+  "icon.success": "{color.success}",
+  "icon.warning": "{color.warning}",
+  "icon.error": "{color.error}"
+}

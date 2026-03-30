@@ -1,0 +1,13 @@
+{
+  "alert.radius": "{radius.md}",
+
+  "alert.padding.lg": "16px",
+  "alert.padding.sm": "12px",
+
+  "alert.gap": "{spacing.sm}",
+
+  "alert.icon.size": "20px",
+
+  "alert.title.font": "{font.size.14}",
+  "alert.description.font": "{font.size.12}"
+}

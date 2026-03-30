@@ -1,0 +1,11 @@
+{
+  "card.radius": "{radius.lg}",
+  "card.padding.lg": "20px",
+  "card.padding.md": "16px",
+  "card.padding.sm": "12px",
+
+  "card.bg": "{color.background.default}",
+  "card.border": "{color.border.default}",
+
+  "card.shadow": "{shadow.md}"
+}

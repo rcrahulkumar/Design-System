@@ -1,0 +1,40 @@
+{
+  "color.primary": "{color.orange.500}",
+  "color.primary.pressed": "{color.orange.600}",
+  "color.primary.subtle": "{color.orange.100}",
+
+  "color.secondary": "{color.blue.500}",
+  "color.secondary.pressed": "{color.blue.600}",
+  "color.secondary.subtle": "{color.blue.100}",
+
+  "color.text.primary": "{color.gray.900}",
+  "color.text.secondary": "{color.gray.400}",
+  "color.text.muted": "{color.gray.300}",
+
+  "color.background.default": "{color.white}",
+  "color.background.subtle": "{color.gray.100}",
+
+  "color.border.default": "{color.gray.200}",
+
+  "color.success": "{color.green.500}",
+  "color.success.bg": "{color.green.100}",
+
+  "color.error": "{color.red.500}",
+  "color.error.bg": "{color.red.100}",
+
+  "color.warning": "{color.yellow.500}",
+  "color.warning.bg": "{color.yellow.100}",
+
+  "radius.sm": "{radius.8}",
+  "radius.md": "{radius.12}",
+  "radius.lg": "{radius.16}",
+
+  "spacing.xs": "{spacing.8}",
+  "spacing.sm": "{spacing.12}",
+  "spacing.md": "{spacing.16}",
+  "spacing.lg": "{spacing.24}",
+
+  "font.family": "{font.family.base}",
+  "font.body": "{font.size.16}",
+  "font.heading": "{font.size.24}"
+}

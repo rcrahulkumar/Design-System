@@ -1,0 +1,11 @@
+{
+  "upload.background": "{color.background.subtle}",
+  "upload.border": "{color.border.default}",
+  "upload.border.error": "{color.error}",
+
+  "upload.text": "{color.text.primary}",
+  "upload.subtext": "{color.text.secondary}",
+
+  "upload.radius": "{radius.lg}",
+  "upload.padding": "{spacing.lg}"
+}

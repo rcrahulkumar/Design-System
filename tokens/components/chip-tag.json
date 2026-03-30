@@ -1,0 +1,16 @@
+{
+  "chip.tag.bg.orange": "{color.orange.100}",
+  "chip.tag.text.orange": "{color.orange.800}",
+
+  "chip.tag.bg.blue": "{color.blue.100}",
+  "chip.tag.text.blue": "{color.blue.800}",
+
+  "chip.tag.bg.green": "{color.green.100}",
+  "chip.tag.text.green": "{color.green.500}",
+
+  "chip.tag.bg.red": "{color.red.100}",
+  "chip.tag.text.red": "{color.red.500}",
+
+  "chip.tag.bg.gray": "{color.gray.100}",
+  "chip.tag.text.gray": "{color.text.secondary}"
+}

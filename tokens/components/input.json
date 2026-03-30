@@ -1,0 +1,21 @@
+{
+  "input.background": "{color.white}",
+  "input.border.default": "{color.gray.200}",
+  "input.border.focus": "{color.primary}",
+  "input.border.error": "{color.error}",
+  "input.border.disabled": "{color.gray.200}",
+
+  "input.text": "{color.text.primary}",
+  "input.placeholder": "{color.text.muted}",
+  "input.label": "{color.text.secondary}",
+
+  "input.radius": "{radius.md}",
+
+  "input.padding.lg": "16px",
+  "input.padding.md": "12px",
+  "input.padding.sm": "8px",
+
+  "input.font.lg": "16px",
+  "input.font.md": "14px",
+  "input.font.sm": "12px"
+}

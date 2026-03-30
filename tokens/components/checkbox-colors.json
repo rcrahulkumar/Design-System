@@ -1,0 +1,15 @@
+{
+  "checkbox.border.default": "{color.border.default}",
+  "checkbox.border.selected": "{color.primary}",
+  "checkbox.border.disabled": "{color.gray.200}",
+
+  "checkbox.bg.selected": "{color.primary}",
+  "checkbox.bg.disabled": "{color.gray.300}",
+
+  "checkbox.check.color": "{color.white}",
+
+  "checkbox.label": "{color.text.primary}",
+  "checkbox.description": "{color.text.secondary}",
+
+  "checkbox.disabled.text": "{color.text.muted}"
+}

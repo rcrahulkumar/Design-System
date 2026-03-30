@@ -1,0 +1,25 @@
+{
+  "badge.light": {
+    "bg": "{semantic.bg}",
+    "text": "{semantic.text}",
+    "border": "transparent"
+  },
+
+  "badge.outline": {
+    "bg": "transparent",
+    "text": "{semantic.text}",
+    "border": "{semantic.border}"
+  },
+
+  "badge.dark": {
+    "bg": "{semantic.text}",
+    "text": "{color.white}",
+    "border": "transparent"
+  },
+
+  "badge.nobg": {
+    "bg": "transparent",
+    "text": "{semantic.text}",
+    "border": "transparent"
+  }
+}

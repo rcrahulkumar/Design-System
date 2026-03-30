@@ -1,0 +1,13 @@
+{
+  "chip.selection.default.bg": "{color.gray.100}",
+  "chip.selection.default.text": "{color.text.primary}",
+  "chip.selection.default.border": "{color.border.default}",
+
+  "chip.selection.selected.bg": "{color.primary}",
+  "chip.selection.selected.text": "{color.white}",
+  "chip.selection.selected.border": "{color.primary}",
+
+  "chip.selection.disabled.bg": "{color.gray.100}",
+  "chip.selection.disabled.text": "{color.text.muted}",
+  "chip.selection.disabled.border": "{color.gray.200}"
+}

@@ -1,0 +1,14 @@
+{
+  "permission.default": {
+    "bg": "{color.background.default}"
+  },
+
+  "permission.blocked": {
+    "bg": "{color.error.bg}",
+    "border": "{color.error}"
+  },
+
+  "permission.allowed": {
+    "bg": "{color.success.bg}"
+  }
+}

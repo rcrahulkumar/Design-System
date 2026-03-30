@@ -1,0 +1,25 @@
+{
+  "icon.button": {
+    "size": "{icon.size.md}"
+  },
+
+  "icon.input": {
+    "size": "{icon.size.sm}"
+  },
+
+  "icon.list": {
+    "size": "{icon.size.md}"
+  },
+
+  "icon.badge": {
+    "size": "{icon.size.sm}"
+  },
+
+  "icon.banner": {
+    "size": "{icon.size.lg}"
+  },
+
+  "icon.permission": {
+    "size": "{icon.size.xl}"
+  }
+}

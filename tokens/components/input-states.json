@@ -1,0 +1,35 @@
+{
+  "input.default": {
+    "border": "{input.border.default}",
+    "bg": "{input.background}"
+  },
+
+  "input.focused": {
+    "border": "{input.border.focus}",
+    "bg": "{input.background}",
+    "ring": "{color.primary}"
+  },
+
+  "input.filled": {
+    "border": "{input.border.default}",
+    "bg": "{input.background}"
+  },
+
+  "input.error": {
+    "border": "{input.border.error}",
+    "bg": "{color.error.bg}",
+    "text": "{color.error}"
+  },
+
+  "input.disabled": {
+    "border": "{input.border.disabled}",
+    "bg": "{color.gray.100}",
+    "text": "{color.text.muted}"
+  },
+
+  "input.readonly": {
+    "border": "{input.border.default}",
+    "bg": "{color.gray.100}",
+    "text": "{color.text.secondary}"
+  }
+}

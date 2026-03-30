@@ -1,0 +1,18 @@
+{
+  "text.heading.left": {
+    "align": "left"
+  },
+
+  "text.heading.center": {
+    "align": "center"
+  },
+
+  "text.heading.withCTA": {
+    "hasButton": true
+  },
+
+  "text.productSection": {
+    "hasComponentSlot": true,
+    "hasDescription": true
+  }
+}

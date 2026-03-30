@@ -1,0 +1,13 @@
+{
+  "list.item.default": {
+    "bg": "{list.item.bg}"
+  },
+
+  "list.item.hover": {
+    "bg": "{list.item.hover}"
+  },
+
+  "list.item.active": {
+    "bg": "{color.primary.subtle}"
+  }
+}
