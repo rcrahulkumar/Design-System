@@ -30,10 +30,10 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
             {...props}
           />
           <div className={cn(
-            "w-[var(--checkbox-size)] h-[var(--checkbox-size)] rounded-[var(--checkbox-radius)] border-[var(--checkbox-border-width)] transition-all",
-            "border-gray-200 bg-white",
+            "w-[var(--checkbox-size)] h-[var(--checkbox-size)] rounded-[var(--checkbox-radius)] border-2 transition-all",
+            "border-gray-300 bg-white",
             "peer-checked:border-primary peer-checked:bg-primary",
-            "peer-focus-visible:ring-4 peer-focus-visible:ring-primary/20",
+            "peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-primary",
             error && "border-error",
             props.disabled && "border-gray-200 bg-gray-50"
           )} />

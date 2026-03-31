@@ -1,18 +1,29 @@
 import React from 'react';
-import { PermissionCard } from "@/src/components/ui";
+import { PermissionCard, Heading } from "@/src/components/ui";
+import { ComponentPreview } from "@/src/components/ComponentPreview";
 import { Camera, Mic, MapPin, Bell, Heart } from 'lucide-react';
 
 export default function PermissionPage() {
   return (
-    <div className="p-10 max-w-5xl">
-      <h1 className="text-3xl font-bold mb-2">Permission System</h1>
-      <p className="text-gray-500 mb-10">Permission cards explain why the system needs access to sensitive user data.</p>
+    <div className="p-6 md:p-10 max-w-6xl mx-auto space-y-12">
+      <Heading 
+        title="Permission System" 
+        description="Permission cards explain why the system needs access to sensitive user data." 
+      />
 
-      <div className="space-y-16">
-        {/* Core Permissions */}
-        <section>
-          <h2 className="text-xl font-semibold mb-6">Core Permissions</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="space-y-12">
+        <ComponentPreview
+          title="Core Permissions"
+          description="Standard permission requests with allow and decline actions."
+          code={`<PermissionCard
+  title="Camera Access"
+  description="Required to scan your lab reports and medical documents instantly."
+  icon={Camera}
+  onAllow={() => {}}
+  onDecline={() => {}}
+/>`}
+        >
+          <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
             <PermissionCard
               title="Camera Access"
               description="Required to scan your lab reports and medical documents instantly."
@@ -35,12 +46,20 @@ export default function PermissionPage() {
               onDecline={() => {}}
             />
           </div>
-        </section>
+        </ComponentPreview>
 
-        {/* States */}
-        <section>
-          <h2 className="text-xl font-semibold mb-6">States</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <ComponentPreview
+          title="States"
+          description="Permission cards can display 'allowed' or 'blocked' states."
+          code={`<PermissionCard
+  title="Notifications"
+  description="Get real-time alerts for medication reminders and report results."
+  icon={Bell}
+  status="allowed"
+  onAllow={() => {}}
+/>`}
+        >
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
             <PermissionCard
               title="Notifications"
               description="Get real-time alerts for medication reminders and report results."
@@ -57,24 +76,7 @@ export default function PermissionPage() {
               onDecline={() => {}}
             />
           </div>
-        </section>
-
-        {/* Implementation */}
-        <section>
-          <h2 className="text-xl font-semibold mb-6">Implementation</h2>
-          <pre className="bg-gray-900 text-gray-100 p-6 rounded-xl text-sm font-mono overflow-x-auto">
-{`import { PermissionCard } from "@/src/components/ui";
-import { Camera } from 'lucide-react';
-
-<PermissionCard
-  title="Camera Access"
-  description="Scan your reports instantly."
-  icon={Camera}
-  onAllow={() => handleAllow()}
-  onDecline={() => handleDecline()}
-/>`}
-          </pre>
-        </section>
+        </ComponentPreview>
       </div>
     </div>
   );

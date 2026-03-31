@@ -1,21 +1,28 @@
 import React from 'react';
 import { Header, Button, Heading } from "@/src/components/ui";
+import { ComponentPreview } from "@/src/components/ComponentPreview";
 import { Search, Bell, Settings, MoreVertical, Menu } from 'lucide-react';
 
 export default function HeaderPage() {
   return (
-    <div className="p-10 max-w-4xl">
+    <div className="p-6 md:p-10 max-w-6xl mx-auto space-y-12">
       <Heading 
         title="Header System" 
         description="The header is the primary navigation layer, providing context and global actions."
-        className="mb-10"
       />
 
-      <div className="space-y-16">
-        {/* Default Header */}
-        <section>
-          <Heading size="md" title="Default Header" className="mb-6" />
-          <div className="border border-gray-100 rounded-xl overflow-hidden bg-gray-50 p-4">
+      <div className="space-y-12">
+        <ComponentPreview
+          title="Default Header"
+          description="A standard header with a back button and a single right action."
+          code={`<Header 
+  title="My Health" 
+  showBack 
+  onBack={() => {}} 
+  rightActions={<Button variant="tertiary" size="sm" icon={Settings} />}
+/>`}
+        >
+          <div className="w-full border border-gray-100 rounded-xl overflow-hidden bg-gray-50 p-4">
             <Header 
               title="My Health" 
               showBack 
@@ -23,12 +30,25 @@ export default function HeaderPage() {
               rightActions={<Button variant="tertiary" size="sm" icon={Settings} />}
             />
           </div>
-        </section>
+        </ComponentPreview>
 
-        {/* With Status */}
-        <section>
-          <Heading size="md" title="With Status" className="mb-6" />
-          <div className="border border-gray-100 rounded-xl overflow-hidden bg-gray-50 p-4">
+        <ComponentPreview
+          title="With Status"
+          description="A header displaying a subtitle/status and multiple right actions."
+          code={`<Header 
+  title="Dr. Sarah Wilson" 
+  subtitle="Online" 
+  showBack 
+  onBack={() => {}} 
+  rightActions={
+    <div className="flex gap-1">
+      <Button variant="tertiary" size="sm" icon={Search} />
+      <Button variant="tertiary" size="sm" icon={MoreVertical} />
+    </div>
+  }
+/>`}
+        >
+          <div className="w-full border border-gray-100 rounded-xl overflow-hidden bg-gray-50 p-4">
             <Header 
               title="Dr. Sarah Wilson" 
               subtitle="Online" 
@@ -42,56 +62,43 @@ export default function HeaderPage() {
               }
             />
           </div>
-        </section>
+        </ComponentPreview>
 
-        {/* Dashboard Style */}
-        <section>
-          <Heading size="md" title="Dashboard Style" className="mb-6" />
-          <div className="border border-gray-100 rounded-xl overflow-hidden bg-gray-50 p-4">
+        <ComponentPreview
+          title="Dashboard Style"
+          description="A header with a left menu action and a user profile avatar."
+          code={`<Header 
+  leftAction={<Button variant="tertiary" size="sm" icon={Menu} />}
+  title="JIVI Dashboard" 
+  rightActions={
+    <div className="flex gap-1 items-center">
+      <Button variant="tertiary" size="sm" icon={Bell} />
+      <img 
+        src="https://picsum.photos/seed/user/100/100" 
+        className="w-8 h-8 rounded-full border border-gray-200 ml-2"
+        alt="User"
+      />
+    </div>
+  }
+/>`}
+        >
+          <div className="w-full border border-gray-100 rounded-xl overflow-hidden bg-gray-50 p-4">
             <Header 
               leftAction={<Button variant="tertiary" size="sm" icon={Menu} />}
               title="JIVI Dashboard" 
               rightActions={
-                <div className="flex gap-1">
+                <div className="flex gap-1 items-center">
                   <Button variant="tertiary" size="sm" icon={Bell} />
                   <img 
                     src="https://picsum.photos/seed/user/100/100" 
-                    className="w-8 h-8 rounded-full border border-gray-200"
+                    className="w-8 h-8 rounded-full border border-gray-200 ml-2"
                     alt="User"
                   />
                 </div>
               }
             />
           </div>
-        </section>
-
-        {/* Implementation */}
-        <section>
-          <Heading size="md" title="Implementation" className="mb-6" />
-          <pre className="bg-gray-900 text-gray-100 p-6 rounded-xl text-sm font-mono overflow-x-auto">
-{`import { Header } from "@/src/components/ui";
-
-// Basic Header
-<Header 
-  title="Page Title" 
-  showBack 
-  onBack={() => handleBack()} 
-/>
-
-// Full Featured
-<Header 
-  title="Chat" 
-  subtitle="Active now"
-  showBack
-  rightActions={
-    <>
-      <IconButton icon={Search} />
-      <IconButton icon={More} />
-    </>
-  }
-/>`}
-          </pre>
-        </section>
+        </ComponentPreview>
       </div>
     </div>
   );

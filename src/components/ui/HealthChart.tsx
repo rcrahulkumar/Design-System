@@ -26,6 +26,7 @@ export interface HealthChartProps {
   height?: number;
   showGrid?: boolean;
   className?: string;
+  ariaLabel?: string;
 }
 
 export const HealthChart: React.FC<HealthChartProps> = ({
@@ -35,6 +36,7 @@ export const HealthChart: React.FC<HealthChartProps> = ({
   height = 200,
   showGrid = true,
   className,
+  ariaLabel,
 }) => {
   const metricColors = {
     'heart-rate': 'var(--color-red-500)',
@@ -54,11 +56,16 @@ export const HealthChart: React.FC<HealthChartProps> = ({
 
   const color = metricColors[metric];
   const gradientId = metricGradients[metric];
+  const defaultAriaLabel = `${metric.replace('-', ' ')} chart displaying ${data.length} data points`;
 
   const CustomTooltip = ({ active, payload, label }: any) => {
     if (active && payload && payload.length) {
       return (
-        <div className="bg-white p-4 border border-gray-100 rounded-2xl shadow-xl">
+        <div 
+          className="bg-white p-4 border border-gray-100 rounded-2xl shadow-xl"
+          role="tooltip"
+          aria-live="polite"
+        >
           <p className="text-[10px] font-bold uppercase tracking-[0.15em] text-gray-400 mb-2">{label}</p>
           <div className="flex items-baseline gap-1.5">
             <span className="text-lg font-bold text-gray-900 leading-none">
@@ -73,8 +80,33 @@ export const HealthChart: React.FC<HealthChartProps> = ({
   };
 
   return (
-    <div className={cn("w-full", className)} style={{ height }}>
-      <ResponsiveContainer width="100%" height="100%">
+    <div 
+      className={cn("w-full relative focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-primary/20 rounded-xl", className)} 
+      style={{ height }}
+      role="figure"
+      aria-label={ariaLabel || defaultAriaLabel}
+      tabIndex={0}
+    >
+      {/* Visually hidden table for screen readers */}
+      <table className="sr-only">
+        <caption>{ariaLabel || defaultAriaLabel}</caption>
+        <thead>
+          <tr>
+            <th scope="col">Time/Date</th>
+            <th scope="col">Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.map((item, i) => (
+            <tr key={i}>
+              <td>{item.name}</td>
+              <td>{item.value}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      <ResponsiveContainer width="100%" height="100%" className="pointer-events-none sm:pointer-events-auto">
         {type === 'area' ? (
           <AreaChart data={data} margin={{ top: 10, right: 10, left: -20, bottom: 0 }}>
             <defs>

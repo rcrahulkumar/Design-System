@@ -1,6 +1,7 @@
 import React from 'react';
 import { HealthChart, InsightCard, Heading, Card, Badge } from "@/src/components/ui";
-import { Activity, Moon, Footprints, Weight, Flame, TrendingUp, Sparkles } from 'lucide-react';
+import { ComponentPreview } from "@/src/components/ComponentPreview";
+import { Activity, Footprints, Sparkles } from 'lucide-react';
 
 const stepsData = [
   { name: 'Mon', value: 8400 },
@@ -24,109 +25,85 @@ const heartRateData = [
 
 export default function HealthDataPage() {
   return (
-    <div className="p-10 max-w-6xl">
+    <div className="p-6 md:p-10 max-w-6xl mx-auto space-y-12">
       <Heading 
         title="Health Data System" 
         description="A specialized visualization layer for medical and wellness metrics."
-        className="mb-12"
       />
 
-      <div className="space-y-20">
-        {/* Metric Grid */}
-        <section>
-          <Heading size="md" title="Metric Visualization" className="mb-8" />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card className="p-6">
-              <div className="flex items-center justify-between mb-6">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-orange-100 flex items-center justify-center text-orange-500">
-                    <Footprints className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold">Daily Steps</h4>
-                    <p className="text-xs text-gray-400">Past 7 days</p>
-                  </div>
+      <div className="space-y-12">
+        <ComponentPreview 
+          title="Metric Visualization" 
+          description="Charts for displaying health data over time."
+          code={`<HealthChart data={stepsData} metric="steps" type="bar" />\n<HealthChart data={heartRateData} metric="heart-rate" type="area" />`}
+        >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+          <Card className="p-6">
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-orange-100 flex items-center justify-center text-orange-500">
+                  <Footprints className="w-5 h-5" />
                 </div>
-                <Badge status="success" variant="light">+12% vs last week</Badge>
-              </div>
-              <HealthChart data={stepsData} metric="steps" type="bar" height={240} />
-            </Card>
-
-            <Card className="p-6">
-              <div className="flex items-center justify-between mb-6">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-xl bg-red-100 flex items-center justify-center text-red-500">
-                    <Activity className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-bold">Heart Rate</h4>
-                    <p className="text-xs text-gray-400">Today (BPM)</p>
-                  </div>
+                <div>
+                  <h4 className="text-sm font-semibold">Daily Steps</h4>
+                  <p className="text-xs text-gray-400">Past 7 days</p>
                 </div>
-                <Badge status="inactive" variant="light">Avg 72 BPM</Badge>
               </div>
-              <HealthChart data={heartRateData} metric="heart-rate" type="area" height={240} />
-            </Card>
-          </div>
-        </section>
+              <Badge status="success" variant="light">+12% vs last week</Badge>
+            </div>
+            <HealthChart data={stepsData} metric="steps" type="bar" height={240} />
+          </Card>
 
-        {/* AI Insights */}
-        <section>
-          <div className="flex items-center gap-3 mb-8">
-            <Sparkles className="w-6 h-6 text-primary" />
-            <Heading size="md" title="AI Health Insights" />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <InsightCard 
-              title="Sleep Quality"
-              description="Your deep sleep was 15% higher than usual. This correlates with your lower caffeine intake."
-              trend="up"
-              trendValue="+15%"
-              metric="7h 42m"
-              cta={{ label: 'View Sleep Analysis', onClick: () => {} }}
-            />
-            <InsightCard 
-              title="Activity Level"
-              description="You've hit your step goal 5 days in a row. Your cardiovascular endurance is improving."
-              trend="up"
-              trendValue="Goal Met"
-              metric="11.2k"
-              cta={{ label: 'View Activity', onClick: () => {} }}
-            />
-            <InsightCard 
-              title="Calorie Deficit"
-              description="You are slightly below your target calorie intake for weight loss goals."
-              trend="down"
-              trendValue="-200 kcal"
-              metric="1,850"
-              cta={{ label: 'Log Nutrition', onClick: () => {} }}
-            />
-          </div>
-        </section>
+          <Card className="p-6">
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-red-100 flex items-center justify-center text-red-500">
+                  <Activity className="w-5 h-5" />
+                </div>
+                <div>
+                  <h4 className="text-sm font-semibold">Heart Rate</h4>
+                  <p className="text-xs text-gray-400">Today (BPM)</p>
+                </div>
+              </div>
+              <Badge status="inactive" variant="light">Avg 72 BPM</Badge>
+            </div>
+            <HealthChart data={heartRateData} metric="heart-rate" type="area" height={240} />
+          </Card>
+        </div>
+      </ComponentPreview>
 
-        {/* Implementation */}
-        <section>
-          <Heading size="md" title="Implementation" className="mb-6" />
-          <pre className="bg-gray-900 text-gray-100 p-6 rounded-xl text-sm font-mono overflow-x-auto">
-{`import { HealthChart, InsightCard } from "@/src/components/ui";
-
-// Render a health chart
-<HealthChart 
-  data={stepsData} 
-  metric="steps" 
-  type="bar" 
-/>
-
-// Render an AI insight
-<InsightCard 
-  title="Sleep Quality"
-  description="Your deep sleep was 15% higher than usual."
-  trend="up"
-  trendValue="+15%"
-  metric="7h 42m"
-/>`}
-          </pre>
-        </section>
+      <ComponentPreview 
+        title="AI Health Insights" 
+        description="Actionable insights generated from user health data."
+        code={`<InsightCard \n  title="Sleep Quality"\n  description="..."\n  trend="up"\n  trendValue="+15%"\n  metric="7h 42m"\n/>`}
+      >
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+          <InsightCard 
+            title="Sleep Quality"
+            description="Your deep sleep was 15% higher than usual. This correlates with your lower caffeine intake."
+            trend="up"
+            trendValue="+15%"
+            metric="7h 42m"
+            cta={{ label: 'View Sleep Analysis', onClick: () => {} }}
+          />
+          <InsightCard 
+            title="Activity Level"
+            description="You've hit your step goal 5 days in a row. Your cardiovascular endurance is improving."
+            trend="up"
+            trendValue="Goal Met"
+            metric="11.2k"
+            cta={{ label: 'View Activity', onClick: () => {} }}
+          />
+          <InsightCard 
+            title="Calorie Deficit"
+            description="You are slightly below your target calorie intake for weight loss goals."
+            trend="down"
+            trendValue="-200 kcal"
+            metric="1,850"
+            cta={{ label: 'Log Nutrition', onClick: () => {} }}
+          />
+        </div>
+      </ComponentPreview>
       </div>
     </div>
   );

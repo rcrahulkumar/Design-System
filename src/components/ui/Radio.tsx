@@ -29,10 +29,10 @@ export const Radio = React.forwardRef<HTMLInputElement, RadioProps>(
             {...props}
           />
           <div className={cn(
-            "w-[var(--radio-size)] h-[var(--radio-size)] rounded-full border-[var(--radio-border-width)] transition-all",
-            "border-gray-200 bg-white",
+            "w-[var(--radio-size)] h-[var(--radio-size)] rounded-full border-2 transition-all",
+            "border-gray-300 bg-white",
             "peer-checked:border-primary peer-checked:bg-white",
-            "peer-focus-visible:ring-4 peer-focus-visible:ring-primary/20",
+            "peer-focus-visible:ring-2 peer-focus-visible:ring-offset-2 peer-focus-visible:ring-primary",
             error && "border-error",
             props.disabled && "border-gray-200 bg-gray-50"
           )} />
