@@ -27,7 +27,7 @@ export const FloatingActionBar = ({
             className={cn(
               "p-3 rounded-full transition-all duration-300 flex items-center justify-center relative group",
               action.active 
-                ? "bg-brand text-white shadow-md shadow-brand/20" 
+                ? "bg-primary text-primary-foreground shadow-md shadow-primary/20" 
                 : "text-gray-500 hover:bg-gray-100 hover:text-gray-900"
             )}
             aria-label={action.label}

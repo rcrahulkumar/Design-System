@@ -89,7 +89,7 @@ export function Sidebar() {
                     cn(
                       "block px-3 py-2 rounded-lg text-sm transition-all duration-200",
                       isActive 
-                        ? "bg-gray-900 text-white shadow-sm font-medium" 
+                        ? "bg-primary text-primary-foreground shadow-sm font-medium" 
                         : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
                     )
                   }
@@ -104,7 +104,7 @@ export function Sidebar() {
                   cn(
                     "block px-3 py-2 rounded-lg text-sm transition-all duration-200",
                     isActive 
-                      ? "bg-gray-900 text-white shadow-sm font-medium" 
+                      ? "bg-primary text-primary-foreground shadow-sm font-medium" 
                       : "text-gray-600 hover:bg-gray-100 hover:text-gray-900"
                   )
                 }

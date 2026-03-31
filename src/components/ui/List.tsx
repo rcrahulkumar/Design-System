@@ -38,8 +38,8 @@ export const ListItem: React.FC<ListItemProps> = ({
       className={cn(
         "flex items-center gap-4 transition-all group outline-none focus-visible:bg-gray-50 focus-visible:ring-4 focus-visible:ring-primary/10",
         padding === 'lg' ? "p-[var(--list-item-padding)]" : "p-3",
-        onClick ? "cursor-pointer hover:bg-gray-50 active:bg-orange-50" : "cursor-default",
-        active && "bg-orange-50 border-l-4 border-primary",
+        onClick ? "cursor-pointer hover:bg-gray-50 active:bg-primary/20" : "cursor-default",
+        active && "bg-primary/10 border-l-4 border-primary",
         className
       )}
     >
