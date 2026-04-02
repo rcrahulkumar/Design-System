@@ -16,9 +16,9 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
     };
 
     const variants = {
-      primary: "bg-white shadow-sm border border-gray-200/50",
-      secondary: "bg-gray-50 border border-gray-200",
-      elevated: "bg-white shadow-md border border-gray-100",
+      primary: "bg-white shadow-sm border border-gray-100",
+      secondary: "bg-gray-50/80 border border-gray-200/60",
+      elevated: "bg-white shadow-md border border-gray-100/50",
     };
 
     return (

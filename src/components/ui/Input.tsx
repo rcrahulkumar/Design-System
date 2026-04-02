@@ -11,14 +11,14 @@ export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> 
 export const Input = React.forwardRef<HTMLInputElement, InputProps>(
   ({ className, label, error, helperText, sizeVariant = 'md', ...props }, ref) => {
     const sizes = {
-      sm: 'h-9 px-3 text-xs',
-      md: 'h-[var(--input-height)] px-4 text-sm',
-      lg: 'h-14 px-5 text-base',
+      sm: 'h-10 px-3 text-xs rounded-lg',
+      md: 'h-[var(--input-height)] px-4 text-sm rounded-xl',
+      lg: 'h-14 px-5 text-base rounded-2xl',
     };
 
     const stateClasses = error
       ? 'border-error bg-error-bg text-error focus:ring-error/20'
-      : 'border-gray-200 bg-white focus:border-primary focus:ring-primary/10';
+      : 'border-gray-200 bg-white focus:border-primary focus:ring-primary/10 hover:border-gray-300';
 
     const disabledClasses = props.disabled
       ? 'bg-gray-50 text-gray-400 cursor-not-allowed border-gray-100'
@@ -38,7 +38,7 @@ export const Input = React.forwardRef<HTMLInputElement, InputProps>(
         <input
           ref={ref}
           className={cn(
-            'w-full border rounded-xl transition-all outline-none focus:ring-4 font-medium placeholder:text-gray-300',
+            'w-full border transition-all outline-none focus:ring-4 font-medium placeholder:text-gray-300',
             sizes[sizeVariant],
             stateClasses,
             disabledClasses,

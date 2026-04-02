@@ -59,7 +59,7 @@ export const Chip: React.FC<ChipProps> = ({
       role={isSelection ? "button" : undefined}
       aria-pressed={isSelection ? selected : undefined}
       className={cn(
-        'inline-flex items-center gap-2 rounded-xl border font-bold transition-all select-none active:scale-95 outline-none focus-visible:ring-4 focus-visible:ring-primary/20',
+        'inline-flex items-center gap-2 rounded-full border font-medium transition-all select-none active:scale-95 outline-none focus-visible:ring-4 focus-visible:ring-primary/20',
         isSelection ? 'cursor-pointer' : 'cursor-default',
         sizes[size],
         isSelection ? selectionStyles : tagStyles[color],
