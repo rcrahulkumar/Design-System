@@ -56,14 +56,26 @@ export default function ChipPage() {
         description="Chips come in two sizes."
         code={`<Chip label="Small" size="sm" />\n<Chip label="Medium" size="md" />`}
       >
-        <div className="flex flex-wrap gap-6 items-center w-full">
-          <div className="flex flex-col gap-2">
-            <span className="text-xs text-gray-400 uppercase font-semibold">Small</span>
-            <Chip label="Small Chip" size="sm" />
+        <div className="flex flex-col gap-6 w-full">
+          <div className="flex flex-wrap gap-6 items-center">
+            <div className="flex flex-col gap-2">
+              <span className="text-xs text-gray-400 uppercase font-semibold">Small Selection</span>
+              <Chip label="Small Chip" size="sm" />
+            </div>
+            <div className="flex flex-col gap-2">
+              <span className="text-xs text-gray-400 uppercase font-semibold">Medium Selection</span>
+              <Chip label="Medium Chip" size="md" />
+            </div>
           </div>
-          <div className="flex flex-col gap-2">
-            <span className="text-xs text-gray-400 uppercase font-semibold">Medium (Default)</span>
-            <Chip label="Medium Chip" size="md" />
+          <div className="flex flex-wrap gap-6 items-center">
+            <div className="flex flex-col gap-2">
+              <span className="text-xs text-gray-400 uppercase font-semibold">Small Tag</span>
+              <Chip label="Small Tag" size="sm" type="tag" color="blue" />
+            </div>
+            <div className="flex flex-col gap-2">
+              <span className="text-xs text-gray-400 uppercase font-semibold">Medium Tag</span>
+              <Chip label="Medium Tag" size="md" type="tag" color="blue" />
+            </div>
           </div>
         </div>
       </ComponentPreview>
