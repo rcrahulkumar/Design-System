@@ -6,7 +6,7 @@ export interface HealthSummaryCardProps {
   title: string;
   subtitle: string;
   value?: string | number;
-  color?: "blue" | "red" | "green" | "purple" | "brand";
+  color?: "blue" | "red" | "green" | "purple" | "primary";
   className?: string;
 }
 
@@ -23,7 +23,7 @@ export const HealthSummaryCard = ({
     red: "bg-red-50 text-red-600",
     green: "bg-green-50 text-green-600",
     purple: "bg-purple-50 text-purple-600",
-    brand: "bg-brand/10 text-brand",
+    primary: "bg-primary/10 text-primary",
   };
 
   return (

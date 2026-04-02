@@ -31,8 +31,8 @@ export const CalendarSlotPicker = ({
           className={cn(
             "p-2.5 rounded-xl text-sm font-medium transition-all duration-200 border",
             selected === slot
-              ? "bg-brand text-white border-brand shadow-sm shadow-brand/20"
-              : "bg-white text-gray-700 border-gray-200 hover:border-brand/50 hover:bg-brand/5"
+              ? "bg-primary text-white border-primary shadow-sm shadow-primary/20"
+              : "bg-white text-gray-700 border-gray-200 hover:border-primary/50 hover:bg-primary/5"
           )}
         >
           {slot}

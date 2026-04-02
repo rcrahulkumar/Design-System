@@ -27,7 +27,7 @@ export const WeeklyBarChart = ({
             <div
               className={cn(
                 "w-full max-w-[12px] rounded-full transition-all duration-500 absolute bottom-0",
-                i === highlightIndex ? "bg-brand" : "bg-gray-200 group-hover:bg-gray-300"
+                i === highlightIndex ? "bg-primary" : "bg-gray-200 group-hover:bg-gray-300"
               )}
               style={{ height: `${(value / max) * 100}%` }}
             />
@@ -39,7 +39,7 @@ export const WeeklyBarChart = ({
           <div key={i} className="flex-1 text-center">
             <span className={cn(
               "text-[10px] font-medium",
-              i === highlightIndex ? "text-brand font-bold" : "text-gray-400"
+              i === highlightIndex ? "text-primary font-bold" : "text-gray-400"
             )}>
               {label}
             </span>

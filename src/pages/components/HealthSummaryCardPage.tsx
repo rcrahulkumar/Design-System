@@ -18,7 +18,7 @@ export default function HealthSummaryCardPage() {
           code={`<div className="grid grid-cols-2 gap-4">
   <HealthSummaryCard icon={<Heart />} title="Heart" subtitle="Resting HR" value="68 bpm" color="red" />
   <HealthSummaryCard icon={<Activity />} title="Activity" subtitle="Steps today" value="8,432" color="blue" />
-  <HealthSummaryCard icon={<Droplets />} title="Hydration" subtitle="Water intake" value="1.2 L" color="brand" />
+  <HealthSummaryCard icon={<Droplets />} title="Hydration" subtitle="Water intake" value="1.2 L" color="primary" />
   <HealthSummaryCard icon={<Moon />} title="Sleep" subtitle="Last night" value="7h 20m" color="purple" />
 </div>`}
         >
@@ -42,7 +42,7 @@ export default function HealthSummaryCardPage() {
               title="Hydration" 
               subtitle="Water intake" 
               value="1.2 L" 
-              color="brand" 
+              color="primary" 
             />
             <HealthSummaryCard 
               icon={<Moon className="w-5 h-5" />} 

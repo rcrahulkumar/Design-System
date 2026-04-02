@@ -41,7 +41,7 @@ export default function MetricGraphCardPage() {
   title="Activity" 
   value="2,450" 
   unit="kcal" 
-  graph={<div className="h-12 bg-brand/10 rounded-lg flex items-end p-1 gap-1">...</div>}
+  graph={<div className="h-12 bg-primary/10 rounded-lg flex items-end p-1 gap-1">...</div>}
 />`}
         >
           <div className="w-full max-w-sm">
@@ -50,9 +50,9 @@ export default function MetricGraphCardPage() {
               value="2,450" 
               unit="kcal" 
               graph={
-                <div className="h-12 bg-brand/10 rounded-lg flex items-end p-1 gap-1">
+                <div className="h-12 bg-primary/10 rounded-lg flex items-end p-1 gap-1">
                   {[40, 70, 45, 90, 65, 80, 50].map((h, i) => (
-                    <div key={i} className="flex-1 bg-brand rounded-sm" style={{ height: `${h}%` }} />
+                    <div key={i} className="flex-1 bg-primary rounded-sm" style={{ height: `${h}%` }} />
                   ))}
                 </div>
               }

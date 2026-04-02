@@ -18,7 +18,7 @@ export const DoctorCard = React.forwardRef<HTMLDivElement, DoctorCardProps>(
         onClick={onClick}
         className={cn(
           "flex gap-3 p-4 rounded-2xl cursor-pointer transition-all bg-white shadow-sm border items-center",
-          selected ? "border-brand ring-1 ring-brand bg-brand/5" : "border-gray-100 hover:shadow-md hover:border-gray-200",
+          selected ? "border-primary ring-1 ring-primary bg-primary/5" : "border-gray-100 hover:shadow-md hover:border-gray-200",
           className
         )}
         {...props}

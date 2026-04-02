@@ -5,19 +5,19 @@ export interface ProgressBarProps extends React.HTMLAttributes<HTMLDivElement> {
   value: number;
   label?: string;
   showValue?: boolean;
-  variant?: 'success' | 'warning' | 'critical' | 'brand';
+  variant?: 'success' | 'warning' | 'critical' | 'primary';
   size?: 'sm' | 'md' | 'lg';
 }
 
 export const ProgressBar = React.forwardRef<HTMLDivElement, ProgressBarProps>(
-  ({ className, value, label, showValue = true, variant = 'brand', size = 'md', ...props }, ref) => {
+  ({ className, value, label, showValue = true, variant = 'primary', size = 'md', ...props }, ref) => {
     const clampedValue = Math.min(100, Math.max(0, value));
     
     const colors = {
       success: "bg-green-500",
       warning: "bg-yellow-500",
       critical: "bg-red-500",
-      brand: "bg-brand",
+      primary: "bg-primary",
     };
 
     const sizes = {

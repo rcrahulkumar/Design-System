@@ -15,7 +15,7 @@ export default function AICardPage() {
           title="Variants"
           description="Different color variants for AI cards."
           code={`<div className="space-y-4">
-  <AICard variant="brand" title="Brand AI" description="..." />
+  <AICard variant="primary" title="Brand AI" description="..." />
   <AICard variant="blue" title="Blue AI" description="..." />
   <AICard variant="green" title="Green AI" description="..." />
   <AICard variant="purple" title="Purple AI" description="..." />
@@ -23,10 +23,10 @@ export default function AICardPage() {
         >
           <div className="w-full max-w-md space-y-4">
             <AICard 
-              variant="brand"
+              variant="primary"
               title="JIVI AI Analysis Ready" 
               description="Your latest lab results have been analyzed." 
-              action={<Button variant="secondary" size="sm" className="text-brand">View</Button>}
+              action={<Button variant="secondary" size="sm" className="text-primary">View</Button>}
             />
             <AICard 
               variant="blue"
@@ -59,10 +59,10 @@ export default function AICardPage() {
           <div className="w-full max-w-md">
             <AICard 
               loading
-              variant="brand"
+              variant="primary"
               title="Analyzing Results..." 
               description="JIVI is processing your data." 
-              action={<Button variant="secondary" size="sm" className="text-brand">View</Button>}
+              action={<Button variant="secondary" size="sm" className="text-primary">View</Button>}
             />
           </div>
         </ComponentPreview>

@@ -27,7 +27,7 @@ export const DoctorListItem = ({
     <div
       onClick={onSelect}
       className={cn(
-        "flex gap-4 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-brand/20 transition-all cursor-pointer group",
+        "flex gap-4 p-5 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-md hover:border-primary/20 transition-all cursor-pointer group",
         className
       )}
     >
@@ -35,7 +35,7 @@ export const DoctorListItem = ({
         <img 
           src={avatar} 
           alt={name} 
-          className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-sm group-hover:border-brand/10 transition-colors" 
+          className="w-16 h-16 rounded-full object-cover border-2 border-white shadow-sm group-hover:border-primary/10 transition-colors" 
         />
         <div className="absolute bottom-0 right-0 w-4 h-4 bg-emerald-500 border-2 border-white rounded-full" />
       </div>
@@ -44,7 +44,7 @@ export const DoctorListItem = ({
         <div className="flex justify-between items-start">
           <div>
             <h3 className="font-semibold text-gray-900 text-lg leading-tight">{name}</h3>
-            <p className="text-sm font-medium text-brand mt-0.5">{specialty}</p>
+            <p className="text-sm font-medium text-primary mt-0.5">{specialty}</p>
           </div>
         </div>
 

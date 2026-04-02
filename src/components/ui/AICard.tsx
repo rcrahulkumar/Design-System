@@ -4,18 +4,18 @@ import { cn } from '@/src/lib/utils';
 export interface AICardProps extends React.HTMLAttributes<HTMLDivElement> {
   title: string;
   description: string;
-  variant?: 'blue' | 'green' | 'purple' | 'brand';
+  variant?: 'blue' | 'green' | 'purple' | 'primary';
   loading?: boolean;
   action?: React.ReactNode;
 }
 
 export const AICard = React.forwardRef<HTMLDivElement, AICardProps>(
-  ({ className, title, description, variant = 'brand', loading, action, ...props }, ref) => {
+  ({ className, title, description, variant = 'primary', loading, action, ...props }, ref) => {
     const variants = {
       blue: "from-blue-500 to-blue-400",
       green: "from-green-500 to-green-400",
       purple: "from-purple-500 to-purple-400",
-      brand: "from-brand to-brand/80",
+      primary: "from-primary to-primary/80",
     };
 
     return (
